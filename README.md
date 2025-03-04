@@ -43,6 +43,7 @@
 
 2. **Configuration:**  
    - Open `init.mcfunction` and replace `PLAYERNAME` with the exact in-game username of the player who should be protected.
+   - when joining "/team join Ignore Team" also works
    
 3. **Restart Your Server/World:**  
    - A **full server restart** is recommended (instead of using `/reload`) to ensure all datapack functions load automatically.
