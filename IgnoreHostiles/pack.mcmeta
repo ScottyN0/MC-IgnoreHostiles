@@ -1,0 +1,6 @@
+{
+  "pack": {
+    "pack_format": 15,
+    "description": "Ignore all hostile mobs for a specific player"
+  }
+}
