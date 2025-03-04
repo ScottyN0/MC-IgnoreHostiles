@@ -60,3 +60,32 @@
 
 - **Manual Testing:**  
   You can test the functionality by summoning a new hostile mob:
+
+
+## Troubleshooting
+
+- **Folder Structure:**  
+Make sure `pack.mcmeta` is at the very root (or top level of the JAR) and that the `data` folder is not nested inside another folder.
+
+- **Tick Function Not Running Automatically:**  
+If you don’t see evidence of the tick function running (for example, by temporarily inserting a debug command like `say Debug: Tick ran!` at the top of `tick.mcfunction`), ensure that:
+- `data/ignorehostiles/tags/functions/tick.json` is correctly placed and formatted.
+- You have restarted your server fully instead of using `/reload`.
+
+- **Aggro Persistence:**  
+Mobs that already have you as their target before being added to the team might not drop their target immediately. Test with newly spawned mobs to verify the behavior.
+
+## Extending the Datapack
+
+- To include modded hostile mobs, add additional `execute` commands in `tick.mcfunction` using their entity type IDs.
+- Adjust or add new functions as needed to support additional behavior.
+
+## Credits
+
+- **Author:** [Scottyn0]
+- Built using vanilla Minecraft commands and datapack mechanics.
+
+## License
+
+This project is licensed under the Apache License. See the [LICENSE](LICENSE) file for details.
+
